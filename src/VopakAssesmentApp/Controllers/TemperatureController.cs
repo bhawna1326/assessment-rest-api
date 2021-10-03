@@ -24,6 +24,7 @@ namespace VopakAssesmentApp.Controllers
 
         [HttpGet("currenttemp")]
         [ProducesResponseType(typeof(Temperature), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> GetCurrentTemperature([FromQuery] string city)
         {
             if(string.IsNullOrWhiteSpace(city))
