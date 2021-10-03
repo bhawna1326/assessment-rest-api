@@ -1,8 +1,8 @@
 ﻿@GetTemperature
 Feature: GetTemperature
 
-Scenario Outline: Get the temeperature of the city Covilha Portugal
-	Given the city name as Covilha
+Scenario Outline: Get the temeperature of the city
+	Given the city name as <cityName>
 	When I make a GET request to the currenttemp endpoint
 	Then I get the response
 	And the response code is 200
