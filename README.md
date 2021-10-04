@@ -14,13 +14,22 @@ For deployment, each environment will have a seperate settings file titles as Te
 
 ### Requirements
 
-* [Visual Studio code] (https://code.visualstudio.com/download)
-* [C# extension for VS Code] (https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 * [DotNet Core installed .netCore 3.1 SDK] (https://www.microsoft.com/net/download)
+* [Visual Studio code] (https://code.visualstudio.com/download) (code editor optional)
+* [C# extension for VS Code] (https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 
+## How to run it locally using Dotnet core CLI
+If you want to get API up and running locally you can follow this steps:
+
+* Download the repository from git
+* Make sure you have the Dot Net core installed
+* Go to the Terminal or command prompt
+* Browse the folder structure where the source project file is and run the command dotnet run: \src\VopakAssesmentApp> dotnet run
+* The server will be up and running and will start listening on https://localhost:5001 (SSL) and http://localhost:5000
+* Go to your web browser and go to the above url and enter the full API path: example: https://localhost:5001/temperature/currenttemp?city=covilha
 
 ## How to run it locally using Visual Studio Code
-If you want to get API up and running locally you can follow this steps:
+If you want to get API running and debugging locally you using Visual studio can follow this steps:
 
 * Download the repository from git
 * Open the repository in VS code
